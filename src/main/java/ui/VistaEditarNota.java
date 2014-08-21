@@ -10,11 +10,11 @@ import org.uqbar.arena.windows.MainWindow;
 
 import domain.Modelo;
 
-public class Vista extends MainWindow<ViewModel> {
+public class VistaEditarNota extends MainWindow<ViewModelEditarNota> {
 	
 
-	public Vista() {
-		super(new ViewModel(new Modelo()));
+	public VistaEditarNota() {
+		super(new ViewModelEditarNota(new Modelo()));
 	}
 
 	@Override
@@ -34,9 +34,6 @@ public class Vista extends MainWindow<ViewModel> {
 		new Button(mainPanel).onClick(() -> {}).setCaption("aceptar");
 		
 	}
-	
-	 public static void main(String[] args) {
-		    new Vista().startApplication();
-	 }
+
 }
 

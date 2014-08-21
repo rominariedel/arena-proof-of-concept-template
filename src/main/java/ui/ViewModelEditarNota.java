@@ -5,14 +5,14 @@ import domain.Modelo;
 import org.uqbar.commons.utils.Observable;
 
 @Observable
-public class ViewModel {
+public class ViewModelEditarNota {
 
   private Modelo modelo;
   private Date fecha;
   private String descripcion;
   private Boolean aprobado;
 	
-  public ViewModel(Modelo modelo) {
+  public ViewModelEditarNota(Modelo modelo) {
     this.modelo = modelo;
   }
   
